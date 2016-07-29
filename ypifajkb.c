@@ -192,6 +192,7 @@ void execute(FILE* file) {
                 //Pop and put value in tmp storage
                 tmp = pop();
                 notmp = false;
+                break;
 
             case 'v':
                 //Push value from tmp storage
@@ -200,6 +201,7 @@ void execute(FILE* file) {
 
                 push(tmp);
                 notmp = true;
+                break;
 
             case '[': {
                 //Start loop
@@ -277,6 +279,6 @@ int main(int argc, char** argv) {
 
     srand(time(NULL));
     tmp = 0;
-    notpm = true;
+    notmp = true;
     execute(file);
 }

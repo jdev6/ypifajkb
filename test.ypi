@@ -1,5 +1,17 @@
-Hello world program
+Hello world programs
+
+Method 1: Direct print
+2 5 * "!dlrow olleH"
+,,,,,,,,,,,,,
+
+Method 2: Swapping
 
 2 5 * "!dlrow olleH"
-9 4 +
+9 4 + Number of chars to print
 [~,1-]
+
+Method 3: Tmp storage
+
+2 5 * "!dlrow olleH"
+9 4 + Number of chars to print
+[^,v1-]
